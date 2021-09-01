@@ -1,0 +1,15 @@
+{
+  "name": "test",
+  "short_name": "test",
+  "description": "## Build Setup",
+  "icons": [
+    {
+      "src": "/test.png",
+      "sizes": "96x96"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#333",
+  "lang": "kr"
+}
