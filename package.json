@@ -5,10 +5,13 @@
   "scripts": {
     "dev": "nuxt --hostname 0.0.0.0 --port 3000",
     "build": "nuxt build",
+    "build:staging": "NODE_ENV=staging nuxt build",
     "start": "nuxt start",
     "export": "nuxt generate",
+    "export:staging": "NODE_ENV=staging nuxt generate",
     "lint:js": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
-    "lint": "npm run lint:js"
+    "lint": "npm run lint:js",
+    "test": "jest"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
@@ -23,12 +26,18 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
+    "@vue/test-utils": "^1.2.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^27.0.5",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.12.1",
-    "node-sass": "^6.0.1",
+    "jest": "^27.0.5",
     "prettier": "^2.3.2",
-    "sass-loader": "^10.2.0"
+    "sass": "^1.39.0",
+    "sass-loader": "^10.2.0",
+    "ts-jest": "^27.0.3",
+    "vue-jest": "^3.0.4"
   }
 }

@@ -63,6 +63,7 @@ $ npm run export
 
 - @nuxtjs/dotenv : 배포 타겟별 설정값을 제어하기 위해 사용
 - sass & sass-loader : css preprocesser 를 사용하기 위함
+- lodash :
 
 ## 옵션 설치 패키지
 
