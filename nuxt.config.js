@@ -53,6 +53,8 @@ export default {
     proxy: true,
     debug: true,
     retry: { retries: 3 },
+    // proxyHeaders: false,
+    // credentials: false,
     requestInterceptor: (config) => {
       // config.headers.common['Authentication'] =
       config.headers.common['Content-Type'] = config.headers.common['Content-Type'] || 'application/json;charset=utf-8'
@@ -93,10 +95,10 @@ export default {
 
   srcDir: 'src/',
 
-  generate: {
-    dir: 'dist/',
-    subFolders: false,
-  },
+  // generate: {
+  //   dir: 'dist/',
+  //   subFolders: false,
+  // },
 
   // loading: '~/components/common/loading.vue',
 }

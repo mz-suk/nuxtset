@@ -20,7 +20,6 @@ $ npm run dev
 - 서버 배포 빌드
 
 ```bash
-$ npm run build
 $ npm run export
 ```
 
